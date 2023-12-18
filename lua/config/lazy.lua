@@ -14,7 +14,7 @@ require("lazy").setup({
             import = "lazyvim.plugins",
             opts = {
                 colorscheme = "tokyonight-night",
-            }
+            },
         },
         { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.dap.core" },
@@ -31,7 +31,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.lsp.none-ls" },
         { import = "lazyvim.plugins.extras.util.dot" },
-        -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+
         -- import/override with your plugins
         { import = "plugins" },
     },
