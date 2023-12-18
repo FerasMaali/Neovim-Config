@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 
 local map = vim.keymap.set
+local del = vim.keymap.del
 
 map({ "n", "v" }, "<leader>y", '"+y')
 map({ "n", "v" }, "<leader>p", '"+p')
@@ -67,3 +68,8 @@ vim.cmd([[
         call feedkeys(":" . a:str)
     endfunction
 ]])
+
+del({ "n", "t" }, "<C-H>")
+del({ "n", "t" }, "<C-J>")
+del({ "n", "t" }, "<C-K>")
+del({ "n", "t" }, "<C-L>")
