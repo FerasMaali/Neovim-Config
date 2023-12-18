@@ -36,10 +36,6 @@ map("n", "k", function()
     vim.cmd("normal! m'" .. vim.v.count .. "k")
 end)
 
-map("n", "<F5>", "<CMD>term ./%<CR>", {
-    noremap = true,
-})
-
 map({"n", "i", "v"}, "<F1>", "<nop>")
 
 -- Visual mode pressing * or # searches for the current selection
