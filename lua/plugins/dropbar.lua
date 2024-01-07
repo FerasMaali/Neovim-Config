@@ -18,6 +18,7 @@ return {
                         local allowedType = {
                             json = true,
                             yaml = true,
+                            terraform = true,
                         }
 
                         local filetype = vim.bo[buf].filetype
