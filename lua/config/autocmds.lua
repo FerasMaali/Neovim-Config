@@ -11,8 +11,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile", "FileChangedShell" }, {
     callback = function()
         local filepath = vim.fn.expand('%:p')
         if vim.fn.executable(filepath) == 1 then
-            print("Mapping <F5> to run the file")
-            vim.keymap.set("n", "<F5>", "<CMD>term ./" .. vim.fn.fnamemodify(filepath, ":t") .. "<CR>", {
+            vim.keymap.set("n", "<F5>", "<CMD>term " .. filepath .. "<CR>", {
                 noremap = true,
                 buffer = true,
             })
