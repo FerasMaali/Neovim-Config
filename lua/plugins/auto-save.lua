@@ -16,9 +16,14 @@ return {
                     local fn = vim.fn
                     local filetype = fn.getbufvar(buf, "&filetype")
                     local modifiable = fn.getbufvar(buf, "&modifiable")
+                    local readonly = fn.getbufvar(buf, "&readonly")
                     local file_path = vim.api.nvim_buf_get_name(0)
 
                     if modifiable ~= 1 then
+                        return false
+                    end
+
+                    if readonly == 1 then
                         return false
                     end
 
