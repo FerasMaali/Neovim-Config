@@ -27,18 +27,12 @@ autocmd({ "BufRead", "BufNewFile", "FileChangedShell" }, {
 local save_fold = augroup("PersistentFolds", { clear = true })
 autocmd("BufWinLeave", {
     callback = function()
-        if vim.fn.expand("%:p") == "" then
-            return
-        end
-        vim.cmd.mkview()
+        vim.cmd.mkview({ mods = { emsg_silent = true } })
     end,
     group = save_fold,
 })
 autocmd("BufWinEnter", {
     callback = function()
-        if vim.fn.expand("%:p") == "" then
-            return
-        end
         vim.cmd.loadview({ mods = { emsg_silent = true } })
     end,
     group = save_fold,
