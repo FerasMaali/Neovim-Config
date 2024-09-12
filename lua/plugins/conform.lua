@@ -14,6 +14,7 @@ return {
             ["markdown"] = { { "prettierd", "prettier" } },
             ["markdown.mdx"] = { { "prettierd", "prettier" } },
             ["tex"] = { "latexindent" },
+            ["sql"] = { "sql_formatter" }
         },
     },
 }
