@@ -13,8 +13,8 @@ return {
             ["html"] = { { "prettierd", "prettier" } },
             ["markdown"] = { { "prettierd", "prettier" } },
             ["markdown.mdx"] = { { "prettierd", "prettier" } },
+            ["sql"] = { "sql_formatter" },
             ["tex"] = { "latexindent" },
-            ["sql"] = { "sql_formatter" }
         },
     },
 }
