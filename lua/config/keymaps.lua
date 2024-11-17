@@ -65,8 +65,9 @@ vim.cmd([[
     endfunction
 ]])
 
-del({ "n", "t" }, "<C-H>")
-del({ "n", "t" }, "<C-J>")
-del({ "n", "t" }, "<C-K>")
-del({ "n", "t" }, "<C-L>")
+map({ "n", "t" }, "<C-H>", "<nop>")
+map({ "n", "t" }, "<C-J>", "<nop>")
+map({ "n", "t" }, "<C-K>", "<nop>")
+map({ "n", "t" }, "<C-L>", "<nop>")
+
 del({ "i", "n" }, "<Esc>")
