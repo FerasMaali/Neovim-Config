@@ -10,6 +10,7 @@ return {
         },
         formatters_by_ft = {
             ["css"] = { { "prettierd", "prettier" } },
+            ["groovy"] = { "npm-groovy-lint" },
             ["html"] = { { "prettierd", "prettier" } },
             ["javascript"] = { { "prettierd", "prettier" } },
             ["markdown"] = { { "prettierd", "prettier" } },
