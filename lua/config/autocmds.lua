@@ -37,3 +37,5 @@ autocmd("BufWinEnter", {
     end,
     group = save_fold,
 })
+
+vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
