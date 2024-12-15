@@ -36,7 +36,7 @@ map("n", "k", function()
     vim.cmd("normal! m'" .. vim.v.count .. "k")
 end)
 
-map({"n", "i", "v"}, "<F1>", "<nop>")
+map({ "n", "i", "v" }, "<F1>", "<nop>")
 
 -- Visual mode pressing * or # searches for the current selection
 vim.cmd([[
@@ -65,11 +65,15 @@ vim.cmd([[
     endfunction
 ]])
 
+-- I prefer the old <C-W>X way
 map({ "n", "t" }, "<C-H>", "<nop>")
 map({ "n", "t" }, "<C-J>", "<nop>")
 map({ "n", "t" }, "<C-K>", "<nop>")
 map({ "n", "t" }, "<C-L>", "<nop>")
 
-del({ "i", "n" }, "<Esc>")
+-- Disable LazyVim keymap to turn off search highlight
+map({ "n" }, "<Esc>", "<nop>")
+
+-- Just the good old directions
 del({ "n", "x", "o" }, "n")
 del({ "n", "x", "o" }, "N")
