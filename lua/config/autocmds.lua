@@ -14,7 +14,7 @@ autocmd({ "BufRead", "BufNewFile", "FileChangedShell" }, {
     callback = function()
         local filepath = vim.fn.expand("%:p")
         if vim.fn.executable(filepath) == 1 then
-            vim.keymap.set("n", "<F5>", "<CMD>term " .. filepath .. "<CR>", {
+            vim.keymap.set("n", "<F5>", "<CMD>term '" .. filepath .. "'<CR>", {
                 noremap = true,
                 buffer = true,
             })
