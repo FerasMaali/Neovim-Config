@@ -13,8 +13,6 @@ return {
             ["groovy"] = { "npm-groovy-lint" },
             ["html"] = { "prettierd", "prettier" },
             ["javascript"] = { "prettierd", "prettier" },
-            ["markdown"] = { "prettierd", "prettier" },
-            ["markdown.mdx"] = { "prettierd", "prettier" },
             ["sql"] = { "sql_formatter" },
             ["tex"] = { "latexindent" },
         },
