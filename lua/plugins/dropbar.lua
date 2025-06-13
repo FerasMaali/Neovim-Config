@@ -4,7 +4,7 @@ return {
         config = function()
             local dropbar = require("dropbar")
             dropbar.setup({
-                general = {
+                bar = {
                     ---@type boolean|fun(buf: integer, win: integer, info: table?): boolean
                     enable = function(buf, win, _)
                         if vim.api.nvim_win_get_config(win).zindex then
