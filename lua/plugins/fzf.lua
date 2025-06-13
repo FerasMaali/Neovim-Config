@@ -11,7 +11,7 @@ return {
         dependencies = {
             {
                 "junegunn/fzf",
-                build = "./install --all",
+                build = "./install --bin",
             },
         },
         config = function()
