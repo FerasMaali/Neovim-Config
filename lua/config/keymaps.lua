@@ -72,7 +72,7 @@ map({ "n", "t" }, "<C-K>", "<nop>")
 map({ "n", "t" }, "<C-L>", "<nop>")
 
 -- Disable LazyVim keymap to turn off search highlight
-map({ "n" }, "<Esc>", "<nop>")
+del({ "n", "i", "s" }, "<Esc>")
 
 -- Just the good old directions
 del({ "n", "x", "o" }, "n")
